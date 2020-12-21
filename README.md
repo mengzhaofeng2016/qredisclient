@@ -1,4 +1,4 @@
-# QRedis Client is light redis client 1.3.6.
+# QRedis Client is light redis client 1.0.1.
 
 <b>Qredis client</b> is writed by Qt & Qml,totally c++, support <b>string</b>, <b>list</b>, <b>set</b>, <b>hash</b>, <b>zset</b> is not supported. support <b>json</b> format, and syntax hightlight. </b>Support password authentication, ssh is not support. 
 
