@@ -72,11 +72,13 @@ QString RedisNetParser::GetNextLine(QString &in)
                 int j=i+2;
                 for(; j<i+2+N; j++) {
 
-                    if(in[j] != "\r" && in[j+1] != "\n") {
-                        res.append(in[j]);
+                    if(in[j] == "\r" && in[j+1] == "\n") {
+
+                        break;
 
                     } else {
-                        break;
+
+                        res.append(in[j]);
                     }
                 }
 
@@ -114,10 +116,11 @@ QString RedisNetParser::getSuccessValue(QString &in)
     if(in.startsWith("+")) {
         QString n;
         for(int i=1; i<in.length();i++) {
-            if(in[i] != "\r" && in[i+1] != "\n") {
-                n += in[i];
-            }else {
+            if(in[i] == "\r" && in[i+1] == "\n") {
+
                 break;
+            }else {
+                n += in[i];
             }
         }
         return n;

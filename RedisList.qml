@@ -117,7 +117,6 @@ Item {
                 }
                 cinx = redisList.currentIndex
 
-
                 redisAdapter.auth(cinx)
 
                 idDbModel.clear()
@@ -571,10 +570,7 @@ Item {
                                     progress.start()
                                 }
 
-
-
                                 if (t === "string") {
-
 
                                     var res = redisAdapter.getKv(cinx,
                                                                  lview.curInx,

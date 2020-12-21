@@ -682,7 +682,10 @@ QString RedisMeta::getKv(int db, QString key)
     selectDb(db);
     QString com = QString("GET %1\r\n").arg(key);
     QString res = confirmCom(com);
+
+
     QString xx = RedisNetParser::GetNextLine(res);
+
 
     return xx;
 }
@@ -825,7 +828,7 @@ bool RedisMeta::setStringKey(int db, QString table, QString value)
 {
     selectDb(db);
 
-    QString com = QString("SET %1 %2\r\n").arg(table).arg(value);
+    QString com = QString("*3\r\n$3\r\nSET\r\n$%1\r\n%2\r\n$%3\r\n%4\r\n").arg(table.size()).arg(table).arg(value.toLocal8Bit().size()).arg(value);
 
     QString res = confirmCom(com);
     if(res.indexOf("OK") >= 0) {
@@ -838,7 +841,7 @@ bool RedisMeta::setStringKey(int db, QString table, QString value)
 bool RedisMeta::setHashKey(int db, QString table, QString key, QString value)
 {
     selectDb(db);
-    QString com = QString("HSET %1 %2 %3\r\n").arg(table).arg(key).arg(value);
+    QString com = QString("*4\r\n$4\r\nHSET\r\n$%1\r\n%2\r\n$%3\r\n%4\r\n$%5\r\n%6\r\n").arg(table.toLocal8Bit().size()).arg(table).arg(key.toLocal8Bit().size()).arg(key).arg(value.toLocal8Bit().size()).arg(value);
     QString res = confirmCom(com);
 
 
@@ -1023,6 +1026,8 @@ QString RedisMeta::confirmCom(QString &com)
         }
 
     }
+
+
 
     return res;
 }

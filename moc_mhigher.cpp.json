@@ -1,0 +1,17 @@
+{
+    "classes": [
+        {
+            "className": "MHigher",
+            "object": true,
+            "qualifiedClassName": "MHigher",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QSyntaxHighlighter"
+                }
+            ]
+        }
+    ],
+    "inputFile": "mhigher.h",
+    "outputRevision": 67
+}

@@ -1,0 +1,17 @@
+{
+    "classes": [
+        {
+            "className": "RedisNetParser",
+            "object": true,
+            "qualifiedClassName": "RedisNetParser",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "redisnetparser.h",
+    "outputRevision": 67
+}
