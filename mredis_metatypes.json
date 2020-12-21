@@ -1,0 +1,1364 @@
+[
+    {
+        "classes": [
+            {
+                "className": "MHigher",
+                "object": true,
+                "qualifiedClassName": "MHigher",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QSyntaxHighlighter"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "mhigher.h",
+        "outputRevision": 67
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "RedisMeta",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "name",
+                        "read": "getName",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setName"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "host",
+                        "read": "getHost",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setHost"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "port",
+                        "read": "getPort",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setPort"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "pass",
+                        "read": "getPass",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setPass"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "uuid",
+                        "read": "getId",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setUuid"
+                    }
+                ],
+                "qualifiedClassName": "RedisMeta",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "i",
+                                "type": "int"
+                            },
+                            {
+                                "name": "n",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "notifyDbKn",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dbInx",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "notifyDbKeys",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "com",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "systemError",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "com",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "readTimeout",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "connectHost",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "name": "auth",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "name": "queryConfig",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "queryDbs",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "queryDbsN",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getDbKeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "typeKey",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getKv",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mat",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "start",
+                                "type": "int"
+                            },
+                            {
+                                "name": "count",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getHKeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getHKv",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getHKn",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mat",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "start",
+                                "type": "int"
+                            },
+                            {
+                                "name": "count",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getSKeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getSKn",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "start",
+                                "type": "int"
+                            },
+                            {
+                                "name": "stop",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getLKeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getLKn",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setStringKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setHashKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setSetKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "linx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pat",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "pushListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "target",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pat",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "insertListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delHashKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delSetKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "oldkey",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "newkey",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "remKey",
+                        "returnType": "bool"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    },
+                    {
+                        "access": "public",
+                        "name": "QRunnable"
+                    }
+                ]
+            },
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "auto"
+                    }
+                ],
+                "className": "RedisAdapter",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "name": "redis",
+                        "read": "getRedis",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QList<RedisMeta*>",
+                        "user": false,
+                        "write": "setRedis"
+                    }
+                ],
+                "qualifiedClassName": "RedisAdapter",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "meta",
+                                "type": "RedisMeta*"
+                            }
+                        ],
+                        "name": "redisLost",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "meta",
+                                "type": "RedisMeta*"
+                            }
+                        ],
+                        "name": "netError",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "updateDevice",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dbInx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "n",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "notifyDbKn",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "dbInx",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "notifyDbKeys",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "com",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "readTimeout",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "list",
+                                "type": "QList<RedisMeta*>&"
+                            }
+                        ],
+                        "name": "setRedis",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "getRedis",
+                        "returnType": "QList<RedisMeta*>"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "str",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "validateJson",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "str",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "formatJson",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "doc",
+                                "type": "QQuickTextDocument*"
+                            }
+                        ],
+                        "name": "setHigher",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "meta",
+                                "type": "RedisMeta*"
+                            }
+                        ],
+                        "name": "newRedis",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "meta",
+                                "type": "RedisMeta*"
+                            }
+                        ],
+                        "name": "testRedis",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "delRedis",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "auth",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "queryConfig",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "queryDbs",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "queryDbsN",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "dbkeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "typeKey",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getKv",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setKv",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mat",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "start",
+                                "type": "int"
+                            },
+                            {
+                                "name": "count",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getHKeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getHKv",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getHKn",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getSKn",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "mat",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "start",
+                                "type": "int"
+                            },
+                            {
+                                "name": "count",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getSKeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "start",
+                                "type": "int"
+                            },
+                            {
+                                "name": "stop",
+                                "type": "int"
+                            }
+                        ],
+                        "name": "getLKeys",
+                        "returnType": "QList<QString>"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "getLKn",
+                        "returnType": "int"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setStringKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setHashKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setSetKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "linx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pat",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "pushListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "target",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "value",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "pat",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "insertListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delHashKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delSetKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "table",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "key",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "delListKey",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "inx",
+                                "type": "int"
+                            },
+                            {
+                                "name": "db",
+                                "type": "int"
+                            },
+                            {
+                                "name": "oldkey",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "newkey",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "remKey",
+                        "returnType": "bool"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "redisadapter.h",
+        "outputRevision": 67
+    },
+    {
+        "classes": [
+            {
+                "className": "RedisNetParser",
+                "object": true,
+                "qualifiedClassName": "RedisNetParser",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "redisnetparser.h",
+        "outputRevision": 67
+    }
+]

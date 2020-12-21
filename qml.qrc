@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>RedisList.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>AddRedis.qml</file>
+        <file>assets/modify.svg</file>
+        <file>assets/modify.png</file>
+        <file>assets/add.svg</file>
+        <file>assets/right.svg</file>
+        <file>assets/down.svg</file>
+        <file>JsonView.qml</file>
+        <file>assets/redis.png</file>
+        <file>RedisProgress.qml</file>
+        <file>KeyListView.qml</file>
+        <file>AddKRecord.qml</file>
+        <file>assets/delete.svg</file>
+    </qresource>
+</RCC>
